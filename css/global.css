@@ -1,0 +1,99 @@
+.page {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+header {
+    width: 1206px;
+    margin: 27px auto 116px auto;
+    margin-top: 27px;
+    margin-bottom: 116px;
+}
+
+.testimonials {
+    background-color: #F8F8F8;
+    padding-bottom: 115px;
+}
+
+.stories {
+    margin-top: 146px;
+    margin-bottom: 164px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    padding-top: 31px;
+    background-color: #F8F8F8;
+    padding-bottom: 25px;
+}
+
+a {
+    font-family: Inter;
+    color: #B8BECD;
+    text-decoration: none;
+}
+
+li {
+    display: block;
+}
+
+button {
+    padding: 0;
+    border: 1px solid #FB8F1D;
+    background: #FB8F1D;
+    color: white;
+    box-sizing: border-box;
+    width: 132px;
+    height: 44px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Inter;
+    border-radius: 15px;
+    margin-left: 18px;
+    cursor: pointer;
+    transition: background 500ms;
+}
+
+button:hover {
+    background: #ffa443;
+}
+
+.logo-image {
+    width: 41px;
+    height: 41px;
+}
+
+h1 {
+    margin: 0;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+}
+
+h2 {
+    margin: 0;
+    font-family: Inter;
+}
+
+h3 {
+    margin: 0;
+    font-family: Inter;
+    font-weight: 600;
+    color: #FB8F1D;
+    transition: color 500ms;
+}
+
+p {
+    font-size: 17px;
+    margin: 0;
+    font-family: Mulish;
+    color: #7D7987;
+}
+
+.rating-star {
+    width: 25.12px;
+    height: 23.95px;
+    margin-right: 15.88px;
+}
