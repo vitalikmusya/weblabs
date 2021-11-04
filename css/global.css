@@ -1,13 +1,19 @@
 .page {
+    overflow-x: hidden;
     margin: 0 auto;
     max-width: 1600px;
 }
 
 header {
-    width: 1206px;
+    max-width: 1206px;
     margin: 27px auto 116px auto;
-    margin-top: 27px;
-    margin-bottom: 116px;
+    padding: 0px 10px 0px 10px;
+}
+
+.intro {
+    max-width: 1206px;
+    margin: 0 auto;
+    padding: 0px 10px 0px 10px;
 }
 
 .testimonials {
@@ -92,8 +98,57 @@ p {
     color: #7D7987;
 }
 
-.rating-star {
-    width: 25.12px;
-    height: 23.95px;
-    margin-right: 15.88px;
+@media screen and (max-width: 1150px) {
+    h1 {
+        font-size: 33px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .testimonials {
+        padding-bottom: 115px;
+    }
+
+    .stories {
+        margin-top: 106px;
+        margin-bottom: 124px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        position: fixed;
+        height: 60.9px;
+        background-color: #ffffff;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0px auto 116px auto;
+        padding: 0px 10px 0px 10px;
+        z-index: 50;
+        background: rgb(235, 235, 235);
+    }
+
+    footer {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .testimonials {
+        padding-bottom: 70px;
+    }
+
+    .stories {
+        margin-top: 80px;
+        margin-bottom: 164px;
+        display: flex;
+        justify-content: center;
+    }
 }

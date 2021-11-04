@@ -1,9 +1,10 @@
 .stories > div {
-    width: 1120px;
-    margin-right: 46px;
+    max-width: 1120px;
+    margin: 0px 46px 0px 10px;
 }
 
 .stories__header {
+    max-width: 1120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,8 +19,13 @@
 .stories ul {
     padding: 0;
     display: flex;
-    justify-content: space-between;
-    margin-right: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stories ul li {
+    max-width: 261px;
+    padding: 0px 9px 15px 9px;
 }
 
 .stories__veiw-all-arrow {
@@ -52,7 +58,7 @@
 .story__title {
     color: black;
     margin-top: 13px;
-    width: 255px;
+    max-width: 255px;
     font-weight: 700;
     font-size: 19px;
     line-height: 30px;
@@ -65,7 +71,7 @@
 
 .story__paragraph {
     margin-top: 13px;
-    width: 255px;
+    max-width: 255px;
     font-family: Inter;
     font-size: 15px;
     line-height: 26px;
@@ -80,3 +86,33 @@
 .story__read-more:hover {
     color: #ffa443;
 }
+
+@media screen and (max-width: 1150px) {
+    .stories > div {
+        max-width: 1024px;
+        margin: 0px 46px 0px 10px;
+    }
+
+    .stories__header {
+        margin-left: 10px;
+        max-width: 1024px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .stories > div {
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+
+    .stories__header {
+        margin: 0;
+        max-width: 1120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+

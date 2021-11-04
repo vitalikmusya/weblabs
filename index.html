@@ -12,38 +12,42 @@
     <section class="page">
         <header>
             <nav>
-                <ul>
+                <div class="header__menu" onclick="openMenu()">
+                    <img src="assets/hamburger_icon.svg"/>
+                </div>
+                <ul id="header__nav-links" class="header__nav-links">
                     <li><a class="home-link header__nav-link" href="#">Home</a></li>
                     <li><a class="header__nav-link" href="#">Destionations</a></li>
                     <li><a class="header__nav-link" href="#">About</a></li>
                     <li><a class="header__nav-link" href="#">Partner</a></li>
                 </ul>
                 <img class="logo-image header__logo-image" src="assets/logo.svg"/>
-                    <!--img class="logo__inner-circle" src="assets/Ellipse 11.svg"/-->
                 <ul>
-                    <li><button class="login-button">Login</button></li>
-                    <li><button>Register</button></li>
+                    <li><button class="login-button header__button">Login</button></li>
+                    <li><button class="header__button">Register</button></li>
                 </ul>
-            </nav>   
-            <div class="intro">
-                <div>
-                    <h1 class="intro__title">Guides by Thousand Sunny</h1>
-                    <p class="intro__paragraph">
-                        Packed with tips and advice from our on-the-ground experts, 
-                        our city guides app (iOS and Android) 
-                        is the ultimate resource before and during a trip.
-                    </p>
-                    <button class="download-button">Download</button>
-                </div>
-                <div>
-                    <img class="intro__image" src="assets/intro.svg"/>
-                </div>
+            </nav>
+        </header>    
+        <section class="intro">
+            <div class="intro__left-part">
+                <h1 class="intro__title">Guides by Thousand Sunny</h1>
+                <img class="intro__image left-image" src="assets/intro.svg"/>
+                <p class="intro__paragraph">
+                    Packed with tips and advice from our on-the-ground experts, 
+                    our city guides app (iOS and Android) 
+                    is the ultimate resource before and during a trip.
+                </p>
+                <button class="download-button">Download</button>
             </div>
-        </header>
+            <div>
+                <img class="intro__image right-image" src="assets/intro.svg"/>
+            </div>
+        </section>
         <section class="testimonials">
             <div>
-                <div class="testimonials__quote">
+                <div class="testimonials__left-part">
                     <h1 class="testimonials__title">Testimonials</h1>
+                    <img class="testimonials__image left-image" src="assets/camera-man.svg"/>
                     <ul class="testimonials__rating">
                         <li class="rating-star"><img src="assets/star.svg"/></li>
                         <li class="rating-star"><img src="assets/star.svg"/></li>
@@ -60,7 +64,7 @@
                     <p class="testimonials__founder-circle">Founder Circle</p>
                 </div>
                 <div>
-                    <img class="testimonials__image" src="assets/camera-man.svg"/>
+                    <img class="testimonials__image right-image" src="assets/camera-man.svg"/>
                 </div>
             </div>
         </section>
@@ -173,5 +177,7 @@
             </div>
         </footer>
     </section>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

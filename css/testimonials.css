@@ -1,5 +1,5 @@
 .testimonials > div {
-    margin: 0;
+    margin: 0px 10px 0 10px;
     justify-content: center;
     display: flex;
 }
@@ -9,12 +9,18 @@
     display: flex;
 }
 
-.testimonials__quote {
+.testimonials__left-part {
     margin-right: 174px;
 }
 
 .testimonials__title {
     margin-top: 79px;
+}
+
+.rating-star {
+    width: 25.12px;
+    height: 23.95px;
+    margin-right: 15.88px;
 }
 
 .testimonials__rating {
@@ -25,7 +31,7 @@
 
 .testimonials__paragraph {
     margin-top: 30.05px;
-    width: 450px;
+    max-width: 450px;
     color: #000000;
     font-size: 24px;
 }
@@ -44,6 +50,89 @@
 
 .testimonials__image {
     margin-top: 159px;
-    margin-right: 70px;
+    margin-right: 0px;
     border-radius: 15px;
+}
+
+.testimonials .left-image {
+    display: none;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .testimonials__left-part {
+        margin-left: 30px;
+        margin-right: 124px;
+    }
+    
+    .testimonials__rating {
+        margin-top: 95px;
+    }
+    
+    .testimonials__paragraph {
+        font-size: 22px;
+    }
+    
+    .testimonials__author {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    
+    .testimonials__founder-circle {
+        font-size: 17px;
+    }
+    
+    .testimonials__image {
+        max-width: 307.2px;
+        max-height: 392.8px;
+    }
+
+    .testimonials__left-part {
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials__left-part {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials__image {
+        margin-right: 0;
+        margin-top: 50px;
+        border-radius: 15px;
+    }
+
+    .testimonials .left-image {
+        display: block;
+    }
+
+    .testimonials .right-image {
+        display: none;
+    }
+
+    .testimonials__rating {
+        margin-top: 50px;
+        margin-right: -15.88px;
+    }
+    
+    .testimonials__paragraph {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .testimonials__image {
+        max-height: 357.1px;
+        max-width: 279.3px;
+    }
+
+    .testimonials__paragraph {
+        margin-top: 30.05px;
+        max-width: 450px;
+        font-size: 20px;
+    }
 }
