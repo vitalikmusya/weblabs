@@ -1,0 +1,49 @@
+.testimonials > div {
+    margin: 0;
+    justify-content: center;
+    display: flex;
+}
+
+.testimonials ul {
+    padding: 0;
+    display: flex;
+}
+
+.testimonials__quote {
+    margin-right: 174px;
+}
+
+.testimonials__title {
+    margin-top: 79px;
+}
+
+.testimonials__rating {
+    margin-top: 145px;
+    padding: 0;
+    display: flex;
+}
+
+.testimonials__paragraph {
+    margin-top: 30.05px;
+    width: 450px;
+    color: #000000;
+    font-size: 24px;
+}
+
+.testimonials__author {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+.testimonials__founder-circle {
+    margin-top: 13px;
+    font-size: 18px;
+    font-family: Inter;
+    color: #000000D9;
+}
+
+.testimonials__image {
+    margin-top: 159px;
+    margin-right: 70px;
+    border-radius: 15px;
+}

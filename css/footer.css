@@ -1,0 +1,39 @@
+footer > div {
+    margin: 0 auto;
+    width: 1219px;
+}
+
+.footer__rights {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__rights p {
+    color: #848484;
+}
+
+.footer__line {
+    margin-top: 26px;
+    border: 0.3px solid #C4C4C4;
+}
+
+.social-media ul {
+    margin-top: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media ul li {
+    margin-right: 34px;
+}
+
+.social-media-logo {
+    transition: opacity 500ms;
+}
+
+.social-media-logo:hover {
+    opacity: 0.82;
+}
