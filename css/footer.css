@@ -1,0 +1,60 @@
+footer > div {
+    margin: 0 auto;
+    padding: 0px 10px 0px 10px;
+    max-width: 1219px;
+}
+
+.footer__rights {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__rights p {
+    color: #848484;
+}
+
+.footer__line {
+    margin-top: 26px;
+    border: 0.3px solid #C4C4C4;
+}
+
+.social-media ul {
+    margin-top: 32px;
+    margin-right: -34px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media ul li {
+    margin-right: 34px;
+}
+
+.social-media-logo {
+    transition: opacity 500ms;
+}
+
+.social-media-logo:hover {
+    opacity: 0.82;
+}
+
+@media screen and (max-width: 1150px) {
+    .social-media ul {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__rights p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer__rights p {
+        text-align: right;
+        font-size: 13px;
+    }
+}

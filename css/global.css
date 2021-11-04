@@ -1,0 +1,154 @@
+.page {
+    overflow-x: hidden;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+header {
+    max-width: 1206px;
+    margin: 27px auto 116px auto;
+    padding: 0px 10px 0px 10px;
+}
+
+.intro {
+    max-width: 1206px;
+    margin: 0 auto;
+    padding: 0px 10px 0px 10px;
+}
+
+.testimonials {
+    background-color: #F8F8F8;
+    padding-bottom: 115px;
+}
+
+.stories {
+    margin-top: 146px;
+    margin-bottom: 164px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    padding-top: 31px;
+    background-color: #F8F8F8;
+    padding-bottom: 25px;
+}
+
+a {
+    font-family: Inter;
+    color: #B8BECD;
+    text-decoration: none;
+}
+
+li {
+    display: block;
+}
+
+button {
+    padding: 0;
+    border: 1px solid #FB8F1D;
+    background: #FB8F1D;
+    color: white;
+    box-sizing: border-box;
+    width: 132px;
+    height: 44px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Inter;
+    border-radius: 15px;
+    margin-left: 18px;
+    cursor: pointer;
+    transition: background 500ms;
+}
+
+button:hover {
+    background: #ffa443;
+}
+
+.logo-image {
+    width: 41px;
+    height: 41px;
+}
+
+h1 {
+    margin: 0;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+}
+
+h2 {
+    margin: 0;
+    font-family: Inter;
+}
+
+h3 {
+    margin: 0;
+    font-family: Inter;
+    font-weight: 600;
+    color: #FB8F1D;
+    transition: color 500ms;
+}
+
+p {
+    font-size: 17px;
+    margin: 0;
+    font-family: Mulish;
+    color: #7D7987;
+}
+
+@media screen and (max-width: 1150px) {
+    h1 {
+        font-size: 33px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .testimonials {
+        padding-bottom: 115px;
+    }
+
+    .stories {
+        margin-top: 106px;
+        margin-bottom: 124px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        position: fixed;
+        height: 60.9px;
+        background-color: #ffffff;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0px auto 116px auto;
+        padding: 0px 10px 0px 10px;
+        z-index: 50;
+        background: rgb(235, 235, 235);
+    }
+
+    footer {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .testimonials {
+        padding-bottom: 70px;
+    }
+
+    .stories {
+        margin-top: 80px;
+        margin-bottom: 164px;
+        display: flex;
+        justify-content: center;
+    }
+}
