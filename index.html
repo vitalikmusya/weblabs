@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Items Ordered</title>
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="modal__content">
+            <h1>Incorrect Input</h1>
+            <ul id="modal__errors">
+            </ul>
+        </div>
+    </div>
+    <div class="page">
+        <h1>Your Items Ordered</h1>
+        <section class="items">
+            <aside class="items__menu">
+                <div class="items__manager">
+                    <h2 id="items__manager-action">Add new Item Ordered</h2>
+                    <label>Name</label>
+                    <input id="item-name">
+                    <label>Price</label>
+                    <div>
+                        <input id="item-price">
+                        <label>hrn.</label>
+                    </div>
+                    <label>Weight</label>
+                    <div>
+                        <input id="item-weight">
+                        <label>kg.</label>
+                    </div>
+                    <label>Type</label>
+                    <input id="item-type">
+                    <label>Count</label>
+                    <input id="item-count">
+                    <button id="item__add-edit-button" onclick="addEditItem()">
+                        Add
+                    </button>
+                </div>
+                <div class="items__search">
+                    <h2>Search Items</h2>
+                    <div class="items__search-menu">
+                        <label>Search by</label>
+                        <select id="items__search-parameter" class="items__search-parameter"
+                        onchange="changeSearchParameterUnits()">
+                            <option value="single-price">single price</option>
+                            <option value="total-price">total price</option>
+                            <option value="single-weight">single weight</option>
+                            <option value="total-weight">total weight</option>
+                        </select>
+                    </div>
+                    <form>
+                        <div>
+                            <label>From</label>
+                            <input id="items__search-from">
+                            <label class="items__search-units">hrn.</label>
+                        </div>
+                        <div>
+                            <label>To</label>
+                            <input id="items__search-to">
+                            <label class="items__search-units">hrn.</label>
+                        </div>
+                    </form>
+                    <button onclick="searchItems()">
+                        Search
+                    </button>
+                </div>
+                <div class="items__calculate-total">
+                    <h2>Total</h2>
+                    <div class="items__calculate-total-menu">
+                        <select id="items__calculate-total" onchange="calculateTotal()">
+                            <option value="price">Price</option>
+                            <option value="weight">Weight</option>
+                        </select>
+                        <label>---------</label>
+                        <label id="items__total-value" class="items__total-value">?</label>
+                    </div>
+                </div>
+            </aside>
+            <div class="items__container">
+                <div class="items__sort-menu">
+                    <label>Sort by</label>
+                    <select id="items__sort-parameter" onchange="sortItems()">
+                        <option value="single-name">name</option>
+                        <option value="single-price">single price</option>
+                        <option value="total-price">total price</option>
+                        <option value="single-weight">single weight</option>
+                        <option value="total-weight">total weight</option>
+                    </select>
+                    <select id="items__sort-order" class="items__sort-order" onchange="sortItems()">
+                        <option value="asc">ascending</option>
+                        <option value="desc">descending</option>
+                    </select>
+                </div>
+                <ul id="items-list">
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
