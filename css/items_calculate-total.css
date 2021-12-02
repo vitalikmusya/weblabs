@@ -1,0 +1,15 @@
+.items__calculate-total {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.items__calculate-total-menu {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#items__total-value {
+    margin-right: 30px;
+}
