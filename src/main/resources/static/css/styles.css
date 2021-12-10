@@ -1,0 +1,13 @@
+@import "./normalize.css";
+
+@import "./global.css";
+
+@import "./items_container.css";
+
+@import "./items_calculate-total.css";
+
+@import "./items-search.css";
+
+@import "./items_manager.css";
+
+@import "./modal.css"
