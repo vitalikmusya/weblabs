@@ -1,0 +1,28 @@
+.container {
+    margin: 0 auto;
+    width: 1366px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    margin: 0;
+    height: 60px;
+    width: 120px;
+}
+
+@import "./css/header.css";
+@import "./css/home.css";
+@import "./css/catalog.css";
+@import "./css/item-page.css";
+@import "./css/footer.css";
+@import "./css/cart.css";

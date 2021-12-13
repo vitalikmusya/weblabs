@@ -1,0 +1,116 @@
+.cart {
+    margin-top: 130px;
+    margin-left: 83px;
+    margin-bottom: 30px;
+}
+
+.cart h1 {
+    margin-left: 20px;
+}
+
+.cart h4 {
+    margin-left: 1050px;
+}
+
+.cart a {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 150px;
+    font-size: 18px;
+    background-color: white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(231, 231, 231);
+}
+
+.cart a:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+.cart .empty {
+    width: 1200px;
+    height: 200.7px;
+    border: 2px rgb(143, 143, 143) solid;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-item {
+    border: 2px rgb(143, 143, 143) solid;
+    border-radius: 15px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-item-image {
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    width: 166.67px;
+    height: 175.7px;
+}
+
+.cart-item-description {
+    margin-top: -40px;
+    margin-left: 30px;
+    margin-right: 430px;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+.cart-item-description h2 {
+    margin-bottom: 10px;
+}
+
+.cart-item-description a {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
+    width: 90px;
+    font-size: 16px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(231, 231, 231);
+}
+
+.cart-item-description a:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+.cart-item button {
+    background: rgb(196, 196, 196);
+    border: 0 solid;
+    border-radius: 7px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background: #AED6F1;
+}
+
+.cart-item .total {
+    margin-left: 30px;
+}
+
+.cart-item .quantity {
+    text-align: center;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
